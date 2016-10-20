@@ -1,17 +1,17 @@
 package prac2;
-public class MainTaller {
-    public static void main(String[] args) {
-        Persona jose = new Persona("39425364H", "111111111", "Jose", "Tomás", 35);
-        Persona maria = new Persona("39425654W", "33333333", "Maria", "Gallego", 55);
-        Persona carlos = new Persona("39425355Q", "22222222", "Carlos", "Torres", 22);
-        Persona anna = new Persona("39425987J", "444444444", "Anna", "Pina", 26);
 
+public class MainTaller {
+
+    public static void main(String[] args) {
+        Persona jose = new Persona("39425364H", "111111111", "Jose", "Tomás", 35, 45000.0);
+        Persona maria = new Persona("39425654W", "33333333", "Maria", "Gallego", 55, 60000.0);
+        Persona carlos = new Persona("39425355Q", "22222222", "Carlos", "Torres", 22, 30000.0);
+        Persona anna = new Persona("39425987J", "444444444", "Anna", "Pina", 26, 50000.0);
 
         Coche Jaguar = new Coche("1234ENG", "Jaguar", "TheRoadIsYours", 200000);
         Coche BMW = new Coche("9065AME", "BMW", "LoveAtFirstDrive", 60000);
         Coche Lexus = new Coche("5638DDD", "Lexus", "FastAndGlorious", 120000);
         Coche Austin = new Coche("3564GER", "Austin", "BeLikeBond", 150000);
-
 
         Taller taller = new Taller();
         taller.registrarReparacion(jose, Jaguar);

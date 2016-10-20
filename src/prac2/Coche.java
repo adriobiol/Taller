@@ -1,11 +1,13 @@
 package prac2;
+
 public class Coche {
+
     private String matricula;
     private String marca;
     private String modelo;
     private double precio;
-    
-       public Coche(String matricula, String marca, String modelo, double precio) {
+
+    public Coche(String matricula, String marca, String modelo, double precio) {
         this.matricula = matricula;
         this.marca = marca;
         this.modelo = modelo;
@@ -44,12 +46,7 @@ public class Coche {
         this.precio = precio;
     }
 
- 
-
-
-
     public String Datos() {
-        return "Coche (Matrícula=" + matricula + ", Escudería=" + marca +  ", Modelo=" + modelo +  ", Precio=" + precio + ")";
+        return "Coche= (Matrícula=" + matricula + ", Escudería=" + marca + ", Modelo=" + modelo + ", Precio=" + precio + ")";
     }
 }
- 

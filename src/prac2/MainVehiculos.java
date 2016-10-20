@@ -18,31 +18,20 @@ public class MainVehiculos {
 
         System.out.println(registro.obtenerTodos());
 
-        registro
-                .obtenerVehiculo("4749JAV")
-                .ifPresent(
-                        coche -> System.out.println("Coche con matricula 4749JAV: " + coche)
-                );
-
-        registro
-                .obtenerVehiculosMarca("Lexus")
-	   // esto es un bucle tradicional expresado con Java 8
-                .forEach(
-                        coche -> System.out.println(coche)
-                );
-
-        registro
+        if(registro.obtenerVehiculo("4749JAV")!=null){
+            System.out.println("Coche con matricula 4749JAV: " + registro.obtenerVehiculo("4749JAV"));
+        }
+        System.out.println("Lista vehiculos Lexus: " + registro.obtenerVehiculosMarca("Lexus"));
+       /* registro
                 .obtenerVehiculoPrecioMax()
-	  // esta expresión es equivalente a verificar diferente de null con Java 8
-                .ifPresent(
-                        coche -> System.out.println("Coche Max precio: " + coche)
-                );
-
-        System.out.println("Eliminando coche con matricula 1234ENG");
-        registro
-                .eliminarVehiculo("1234ENG");
+              System.out.println("Coche Max precio: " + coche);
+                */
+        System.out.println("Coch más caro: " + registro.obtenerVehiculoPrecioMax());
+        registro.eliminarVehiculo("1234ENG");
+        System.out.println("Coche con matrícula 1234ENG eliminado");
 
         System.out.println(registro.obtenerTodos());
+
 
     }
 }

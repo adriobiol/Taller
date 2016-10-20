@@ -1,17 +1,29 @@
 package prac2;
+
 public class Persona {
+
     private String dni;
     private String numSeg;
     private String nombre;
     private String apellidos;
     private int edad;
+    private double sueldo;
 
-    public Persona(String dni, String numSeg, String nombre, String apellidos, int edad) {
+    public Persona(String dni, String numSeg, String nombre, String apellidos, int edad, double sueldo) {
         this.dni = dni;
         this.numSeg = numSeg;
         this.nombre = nombre;
         this.apellidos = apellidos;
         this.edad = edad;
+        this.sueldo = sueldo;
+    }
+
+    public void setSueldo(double sueldo) {
+        this.sueldo = sueldo;
+    }
+
+    public double getSueldo() {
+        return sueldo;
     }
 
     public void setDni(String dni) {
@@ -53,7 +65,8 @@ public class Persona {
     public int getEdad() {
         return edad;
     }
+
+    public String Datos() {
+        return "Persona= (" + "DNI= " + dni + ", Número SS= " + numSeg + ", Nombre= " + nombre + ", Apellidos= " + apellidos + ", Edad= " + edad + ", Sueldo=" + sueldo + ")";
+    }
 }
-    
-    
-   
