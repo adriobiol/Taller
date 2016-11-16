@@ -46,7 +46,7 @@ public class Coche {
         this.precio = precio;
     }
 
-    public String Datos() {
+    public String toString() {
         return "Coche= (Matrícula=" + matricula + ", Escudería=" + marca + ", Modelo=" + modelo + ", Precio=" + precio + ")";
     }
 }
