@@ -66,7 +66,7 @@ public class Persona {
         return edad;
     }
 
-    public String Datos() {
+    public String toString() {
         return "Persona= (" + "DNI= " + dni + ", Número SS= " + numSeg + ", Nombre= " + nombre + ", Apellidos= " + apellidos + ", Edad= " + edad + ", Sueldo=" + sueldo + ")";
     }
 }
